@@ -1,0 +1,15 @@
+show databases;
+use lab250822;
+show tables;
+select ename, city from employee;
+select * from Employee_company;
+select ename,cname,salary,jdate from Employee_company;
+select ename,cname,jdate,salary from Employee_company;
+select ename,salary from Employee_company;
+select cname , city from company;
+select cname from company where city='bombay';
+select ename from Employee where city='nagpur';
+select ename from Employee_company where cname='ACC'and salary<10000;
+select ename from Employee_company where not (cname="ACC");
+select ename from Employee_company where cname<>'ACC';
+select ename from Employee_company where cname='ACC' or cname='TATA';
